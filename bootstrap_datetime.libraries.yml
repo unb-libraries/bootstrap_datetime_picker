@@ -7,7 +7,6 @@ datetimepicker:
     js/bootstrap-datetimepicker.js: {}
     js/drupal.bootstrap_datetime.js: {}
   css:
-    version: 1.x
     theme:
       https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css: { type: external, minified: true }
       css/bootstrap-datetimepicker.css: {}
