@@ -24,6 +24,7 @@ class BootstrapDateTime extends FormElement {
       '#input' => TRUE,
       '#multiple' => FALSE,
       '#maxlength' => 512,
+      '#size' => 25,
       '#process' => [[$class, 'processBootstrapDateTime']],
       '#pre_render' => [[$class, 'preRenderBootstrapDateTime']],
       '#theme_wrappers' => ['form_element'],
