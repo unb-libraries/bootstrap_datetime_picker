@@ -47,10 +47,10 @@ class BootstrapDateTimeWidget extends DateTimeWidgetBase implements ContainerFac
       '#type' => 'select',
       '#title' => $this->t('Hours Format'),
       '#description' => $this->t('Select the hours format'),
-      '#options' => array(
+      '#options' => [
         '12h' => $this->t('12 Hours'),
         '24h' => $this->t('24 Hours'),
-      ),
+      ],
       '#default_value' => $this->getSetting('hour_format'),
       '#required' => TRUE,
     ];
@@ -58,13 +58,13 @@ class BootstrapDateTimeWidget extends DateTimeWidgetBase implements ContainerFac
       '#type' => 'select',
       '#title' => $this->t('Minutes granularity'),
       '#description' => $this->t('Select granularity for minutes in calendar'),
-      '#options' => array(
+      '#options' => [
         '5' => $this->t('5 minutes'),
         '10' => $this->t('10 minutes'),
         '15' => $this->t('15 minutes'),
         '30' => $this->t('30 minutes'),
         '60' => $this->t('60 minutes'),
-      ),
+      ],
       '#default_value' => $this->getSetting('allow_times'),
       '#required' => TRUE,
     ];
