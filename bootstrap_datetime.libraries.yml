@@ -10,6 +10,7 @@ datetimepicker:
     theme:
       https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css: { type: external, minified: true }
       css/bootstrap-datetimepicker.css: {}
+      css/bootstrap_datetime_picker.css: {}
   dependencies:
     - core/jquery
     - core/drupal
