@@ -19,7 +19,7 @@
 
         // Get hour format - 12 or 24.
         var hourFormat = input.data('hourFormat');
-        var timeFormat = (hourFormat === '12h') ? 'DD-MM-YYYY hh:mm' : 'DD-MM-YYYY HH:mm';
+        var timeFormat = (hourFormat === '12h') ? 'YYYY-MM-DD hh:mm' : 'YYYY-MM-DD  HH:mm';
 
         // Get excluded dates.
         var excludeDates = '';
@@ -36,6 +36,7 @@
         // If field widget is Date Time.
         if (widgetType === 'datetime') {
           $("#" + input.attr('id')).datetimepicker({
+            useCurrent: false,
             format:timeFormat,
             daysOfWeekDisabled:disabledDays,
             disabledDates:excludeDates,
@@ -50,7 +51,8 @@
         // If field widget is Date only.
         else {
           $("#" + input.attr('id')).datetimepicker({
-            format:'DD-MM-YYYY',
+            useCurrent: false,
+            format:'YYYY-MM-DD',
             daysOfWeekDisabled:disabledDays,
             disabledDates:excludeDates,
             showTodayButton:true,
