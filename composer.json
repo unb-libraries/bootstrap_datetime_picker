@@ -1,0 +1,7 @@
+{
+  "name": "unb-libraries/bootstrap_datetime_picker",
+  "description": "provides Bootstrap DateTime picker using library https://github.com/Eonasdan/bootstrap-datetimepicker.",
+  "type": "drupal-module",
+  "license": "MIT",
+  "minimum-stability": "dev"
+}
