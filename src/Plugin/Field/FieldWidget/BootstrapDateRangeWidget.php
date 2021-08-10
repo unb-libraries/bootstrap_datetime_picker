@@ -224,7 +224,7 @@ class BootstrapDateRangeWidget extends DateRangeWidgetBase implements ContainerF
     $element['value'] = [
       '#title' => $this->t('Start date'),
       '#type' => 'bootstrap_date_time',
-      '#date_timezone' => drupal_get_user_timezone(),
+      '#date_timezone' => date_default_timezone_get(),
       '#default_value' => NULL,
       '#date_type' => NULL,
       '#required' => $element['#required'],
@@ -233,7 +233,7 @@ class BootstrapDateRangeWidget extends DateRangeWidgetBase implements ContainerF
     $element['end_value'] = [
       '#title' => $this->t('End date'),
       '#type' => 'bootstrap_date_time',
-      '#date_timezone' => drupal_get_user_timezone(),
+      '#date_timezone' => date_default_timezone_get(),
       '#default_value' => NULL,
       '#date_type' => NULL,
       '#required' => $element['#required'],

@@ -240,7 +240,7 @@ class BootstrapDateTimeWidget extends DateTimeWidgetBase implements ContainerFac
     $element['value'] = [
       '#title' => $element['#title'],
       '#type' => 'bootstrap_date_time',
-      '#date_timezone' => drupal_get_user_timezone(),
+      '#date_timezone' => date_default_timezone_get(),
       '#default_value' => NULL,
       '#date_type' => NULL,
       '#required' => $element['#required'],
